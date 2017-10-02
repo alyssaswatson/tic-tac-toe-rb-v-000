@@ -78,8 +78,7 @@ def won?
            end
           else
             false
-         end
-       return result
+           end
      end
 
 def full?(board)
