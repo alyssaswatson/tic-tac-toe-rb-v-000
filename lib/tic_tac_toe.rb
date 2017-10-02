@@ -73,10 +73,10 @@ WIN_COMBINATIONS = [
 
 def won?
        WIN_COMBINATIONS.each do |winning_combination|
-           if winning_combination.all? {|i| @board[i] == "X"} || winning_combination.all?{|i| @board[i] == "O"}
-             result = winning_combination
-           end
+          if position_taken?(winning_combination[0]) && @board[winning_combination[0]] == @board[winning_combination[1]] && @board[winning_combination[1]] == @board[winning_combination[2]]
+        return combo
          end
+       end
      end
 
 def full?(board)
