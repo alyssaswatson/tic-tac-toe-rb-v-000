@@ -76,6 +76,7 @@ def won?
            if winning_combination.all? {|i| @board[i] == "X"} || winning_combination.all?{|i| @board[i] == "O"}
              result = winning_combination
            end
+         end
      end
 
 def full?(board)
