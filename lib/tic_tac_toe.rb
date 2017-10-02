@@ -73,21 +73,9 @@ WIN_COMBINATIONS = [
 
 def won?
    WIN_COMBINATIONS.each do |win_combination|
-     win = win_combination.all? do |index|
-       @board[index] == "X"
-     end
-     if win
-       return win_combination
-     end
-     win = win_combination.all? do |index|
-       @board[index] == "O"
-     end
-     if win
-       return win_combination
-     end
+
    end
-   return false
- end
+end
 
 def full?(board)
    if board.any?{|space| space==" "}
