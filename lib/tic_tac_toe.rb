@@ -74,7 +74,7 @@ WIN_COMBINATIONS = [
 def won?
        WIN_COMBINATIONS.each do |winning_combination|
           if position_taken?(winning_combination[0]) && @board[winning_combination[0]] == @board[winning_combination[1]] && @board[winning_combination[1]] == @board[winning_combination[2]]
-        return combo
+        return winning_combination
          end
        end
      end
